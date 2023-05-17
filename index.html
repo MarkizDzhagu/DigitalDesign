@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Digital Design test</title>
+</head>
+<body>
+    <header class="header">
+        <ul class="nav">
+            <li class="nav__element"><a href="#1anchor">МУЖСКОЕ</a></li>
+            <li class="nav__element"><a href="#2anchor">ЖЕНСКОЕ</a></li>
+            <li class="nav__element"><a href="#3anchor">ДЕТСКОЕ</a></li>
+        </ul>
+        <div class="themeChanger">
+            <svg width="30px" height="30px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g fill="#212121" fill-rule="nonzero">
+                        <path d="M12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 Z M12,20.5 L12,3.5 C16.6944204,3.5 20.5,7.30557963 20.5,12 C20.5,16.6944204 16.6944204,20.5 12,20.5 Z" id="🎨-Color">
+            
+            </path>
+                    </g>
+                </g>
+            </svg>
+        </div>
+    </header>
+    <main>
+        <section class="categories">
+            <a href="#1anchor"><img class="up-arrow" src="/img/up-arrow.png"></a>
+            <form class="buy__form">
+                <div class="form__value">
+                    <p class="form__valuetext">Введите количество</p>
+                    <input class="form__number" type="number" name="value" min="1">
+                </div>
+                <div class="form__radiobuttons">Выберите цвет
+                    <input type="radio" name="colorcheck" id="color1">
+                    <input type="radio" name="colorcheck" id="color2">
+                    <input type="radio" name="colorcheck" id="color3">
+                    <input type="radio" name="colorcheck" id="color4">
+                </div>
+                <textarea class="form__textarea" maxlength="2000"></textarea>
+                <div class="form__buttons">
+                    <input type="button" value="Купить" id="buy">
+                    <input type="button" value="Закрыть" id="close">
+                </div>  
+            </form>
+            <h1 class="category__title" id="1anchor">МУЖСКОЕ</h1>
+            <div class="category male">
+                <div class="category__card">
+                    <img class="card__image" src="/img/men1.jpg">
+                    <h2 class="card__text">Футболка однотонная</h2>
+                    <div class="card__date firstCardDate">01.01.2022</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/men2.jpg">
+                    <h2 class="card__text">Футболка casual</h2>
+                    <div class="card__date">15.12.2021</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/men3.jpg">
+                    <h2 class="card__text">Футболка белая</h2>
+                    <div class="card__date">03.03.2003</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/men4.jpg">
+                    <h2 class="card__text">Рубашка в клетку</h2>
+                    <div class="card__date">04.04.2004</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/men5.jpg">
+                    <h2 class="card__text">Шорты</h2>
+                    <div class="card__date">05.05.2005</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/men6.jpg">
+                    <h2 class="card__text">Рубашка однотонная</h2>
+                    <div class="card__date">06.06.2006</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/men7.jpg">
+                    <h2 class="card__text">Брюки однотонные</h2>
+                    <div class="card__date">07.07.2007</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/men8.jpg">
+                    <h2 class="card__text">Плащ</h2>
+                    <div class="card__date">08.08.2008</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/men9.jpg">
+                    <h2 class="card__text">Кеды</h2>
+                    <div class="card__date">09.09.2009</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/men10.jpg">
+                    <h2 class="card__text">Брюки</h2>
+                    <div class="card__date">10.10.2010</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/men11.jpg">
+                    <h2 class="card__text">Джинсы</h2>
+                    <div class="card__date">11.11.2011</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/men12.jpg">
+                    <h2 class="card__text">Куртка</h2>
+                    <div class="card__date">12.12.2012</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+            </div>
+            <h1 class="category__title" id="2anchor">ЖЕНСКОЕ</h1>
+            <div class="category female">
+                <div class="category__card">
+                    <img class="card__image" src="/img/women1.jpg">
+                    <h2 class="card__text">Футболка однотонная</h2>
+                    <div class="card__date">01.02.2020</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/women2.jpg">
+                    <h2 class="card__text">Рубашка-пиджак</h2>
+                    <div class="card__date">02.03.2020</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/women3.jpg">
+                    <h2 class="card__text">Плащ</h2>
+                    <div class="card__date">03.04.2020</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/women4.jpg">
+                    <h2 class="card__text">Безрукавка</h2>
+                    <div class="card__date">05.06.2020</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/women5.jpg">
+                    <h2 class="card__text">Джинсы</h2>
+                    <div class="card__date">07.08.2020</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/women6.jpg">
+                    <h2 class="card__text">Рубашка в клетку</h2>
+                    <div class="card__date">09.10.2020</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/women7.jpg">
+                    <h2 class="card__text">Джинсы</h2>
+                    <div class="card__date">10.11.2020</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/women8.jpg">
+                    <h2 class="card__text">Брюки</h2>
+                    <div class="card__date">11.12.2020</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/women9.jpg">
+                    <h2 class="card__text">Сапоги</h2>
+                    <div class="card__date">12.01.2020</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/women10.jpg">
+                    <h2 class="card__text">Носки</h2>
+                    <div class="card__date">13.02.2020</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/women11.jpg">
+                    <h2 class="card__text">Брюки</h2>
+                    <div class="card__date">14.03.2020</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+            </div>
+            <h1 class="category__title" id="3anchor">ДЕТСКОЕ</h1>
+            <div class="category children">
+                <div class="category__card">
+                    <img class="card__image" src="/img/child1.jpg">
+                    <h2 class="card__text">Лонгслив</h2>
+                    <div class="card__date">29.01.2019</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/child2.jpg">
+                    <h2 class="card__text">Комплект одежды</h2>
+                    <div class="card__date">28.02.2018</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/child3.jpg">
+                    <h2 class="card__text">Штаны</h2>
+                    <div class="card__date">27.03.2017</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/child4.jpg">
+                    <h2 class="card__text">Комбинезон</h2>
+                    <div class="card__date">26.04.2016</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/child5.jpg">
+                    <h2 class="card__text">Спортивные штаны</h2>
+                    <div class="card__date">25.05.2015</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/child6.jpg">
+                    <h2 class="card__text">Комплект одежды</h2>
+                    <div class="card__date">24.06.2014</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/child7.jpg">
+                    <h2 class="card__text">Лонгслив Marvel</h2>
+                    <div class="card__date">23.07.2013</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/child8.jpg">
+                    <h2 class="card__text">Комплект одежды</h2>
+                    <div class="card__date">22.08.2012</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/child9.jpg">
+                    <h2 class="card__text">Комбинезон</h2>
+                    <div class="card__date">21.09.2011</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+                <div class="category__card">
+                    <img class="card__image" src="/img/child10.jpg">
+                    <h2 class="card__text">Свитер</h2>
+                    <div class="card__date">20.10.2010</div>
+                    <button class="card__buy">Купить</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="nav">
+            <li class="nav__element"><a href="#1anchor">Мужское</a></li>
+            <li class="nav__element"><a href="#2anchor">Женское</a></li>
+            <li class="nav__element"><a href="#3anchor">Детское</a></li>
+        </ul>
+    </footer>
+</body>
+<script src="/script.js"></script>
+</html>

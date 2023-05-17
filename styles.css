@@ -1,0 +1,231 @@
+/*--------------------------Fonts Styles------------------------------*/
+
+@font-face {
+    font-family: "Sensal";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/Sensal\ Regular.ttf")
+}
+
+.card__buy, .card__date {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    font-family: "Sensal";
+}
+
+/*-----------------------------Dark theme-----------------------------*/
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.offdark {
+    background-color: white;
+    color: black;
+}
+
+.rotate {
+    transform: rotate(180deg) translateY(2px);
+}
+
+.themeChanger {
+    position: fixed;
+    top: 15px;
+    right: 25px;
+}
+
+/*------------------------------UpArrow--------------------------------*/
+
+.up-arrow {
+    opacity: 0;
+    max-width: 70px;
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+}
+
+.show {
+    opacity: 100;
+}
+
+/*-------------------------------Main styles---------------------------*/
+
+.header {
+    background-color: gray;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 150px;
+}
+
+.nav__element a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s all ease-in;
+}
+
+
+
+.category__title {
+    padding-top: 100px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0;
+}
+
+.category__card {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    margin-bottom: 20px;
+    text-align: center;
+    justify-self: center;
+}
+
+.category {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card__text {
+    font-size: 15px;
+}
+
+
+.card__buy {
+    max-width: 50%;
+    margin: 10px auto;
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: 0.2s all ease-in;
+    cursor: pointer;
+}
+
+
+.footer {
+    background-color: gray;
+}
+
+/*--------------------------Form styles-----------------------------------*/
+
+
+.buy__form {
+    display: none;
+    flex-direction: column;
+    max-width: 350px;
+    position: fixed;
+    left: 45%;
+    top: 20%;
+    font-size: 15px;
+    z-index: 5;
+}
+
+
+.active {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.form__value {
+    display: flex;
+    height: 30px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.form__valuetext {
+    align-self: center;
+}
+
+.form__number{
+    width: 30px;
+    justify-self: center;
+}
+
+.form__radiobuttons {
+    margin-bottom: 20px;
+}
+
+.form__textarea {
+    min-height: 100px;
+}
+
+#color1 {
+    accent-color: red;
+}
+#color2 {
+    accent-color: blue;
+}
+#color3 {
+    accent-color: green;
+}
+#color4 {
+    accent-color: yellow;
+}
+
+.form__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/*--------------------------------Hovers-----------------------------*/
+
+.nav__element a:hover {
+    color: white;
+}
+
+.card__buy:hover {
+    color:black;
+}
+
+/*--------------------------------Adaptive---------------------------*/
+
+@media (max-width: 768px) {
+    .themeChanger svg {
+        width: 20px;
+    }
+    .nav {
+        padding: 20px 20px;
+        justify-content: space-around;
+    }
+    .nav__element{
+        font-size: 10px;
+    }
+    
+    .themeChanger {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
+    .category__title {
+        padding-top: 80px;
+        padding-bottom: 0px;
+        font-size: 30px;
+    }
+    .category__title:nth-of-type(2), .category__title:nth-of-type(3){
+        padding: 40px 0;;
+    }
+    .up-arrow {
+        max-width: 40px;
+        bottom: 60px;
+        right: 10px;
+    }
+
+}
